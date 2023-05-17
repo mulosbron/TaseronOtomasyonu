@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E9A80086-6F8E-4CC1-832F-6132BF1D42FE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TaseronOtomasyonu</RootNamespace>
+    <AssemblyName>TaseronOtomasyonu</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaglantiSinif.cs" />
+    <Compile Include="FrmGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGiris.Designer.cs">
+      <DependentUpon>FrmGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIsKaydet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIsKaydet.Designer.cs">
+      <DependentUpon>FrmIsKaydet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIsciKaydet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIsciKaydet.Designer.cs">
+      <DependentUpon>FrmIsciKaydet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIsIsciler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIsIsciler.Designer.cs">
+      <DependentUpon>FrmIsIsciler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIsMalzemeler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIsMalzemeler.Designer.cs">
+      <DependentUpon>FrmIsMalzemeler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIsSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIsSil.Designer.cs">
+      <DependentUpon>FrmIsSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMalzemeKaydet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMalzemeKaydet.Designer.cs">
+      <DependentUpon>FrmMalzemeKaydet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIsciSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIsciSil.Designer.cs">
+      <DependentUpon>FrmIsciSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMalzemeSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMalzemeSil.Designer.cs">
+      <DependentUpon>FrmMalzemeSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TaseronDataSet.cs">
+      <DependentUpon>TaseronDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TaseronDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TaseronDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TaseronDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TaseronDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TaseronDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TaseronDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TaseronDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TaseronDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TaseronDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TaseronDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TaseronDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TaseronDataSet7.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FrmGiris.resx">
+      <DependentUpon>FrmGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIsKaydet.resx">
+      <DependentUpon>FrmIsKaydet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIsciKaydet.resx">
+      <DependentUpon>FrmIsciKaydet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIsIsciler.resx">
+      <DependentUpon>FrmIsIsciler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIsMalzemeler.resx">
+      <DependentUpon>FrmIsMalzemeler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIsSil.resx">
+      <DependentUpon>FrmIsSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMalzemeKaydet.resx">
+      <DependentUpon>FrmMalzemeKaydet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIsciSil.resx">
+      <DependentUpon>FrmIsciSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMalzemeSil.resx">
+      <DependentUpon>FrmMalzemeSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="TaseronDataSet.xsc">
+      <DependentUpon>TaseronDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TaseronDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TaseronDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TaseronDataSet.xss">
+      <DependentUpon>TaseronDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TaseronDataSet1.xsc">
+      <DependentUpon>TaseronDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="TaseronDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TaseronDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TaseronDataSet1.xss">
+      <DependentUpon>TaseronDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="TaseronDataSet3.xsc">
+      <DependentUpon>TaseronDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="TaseronDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TaseronDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TaseronDataSet3.xss">
+      <DependentUpon>TaseronDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="TaseronDataSet4.xsc">
+      <DependentUpon>TaseronDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="TaseronDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TaseronDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TaseronDataSet4.xss">
+      <DependentUpon>TaseronDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="TaseronDataSet6.xsc">
+      <DependentUpon>TaseronDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="TaseronDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TaseronDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TaseronDataSet6.xss">
+      <DependentUpon>TaseronDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="TaseronDataSet7.xsc">
+      <DependentUpon>TaseronDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="TaseronDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TaseronDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TaseronDataSet7.xss">
+      <DependentUpon>TaseronDataSet7.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Proje\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
